@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace Audioplayer
 {
@@ -24,10 +25,39 @@ namespace Audioplayer
         {
             InitializeComponent();
         }
-
-        private void betoltes_Click()
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        string fajlnev;
+        private void betoltes_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog filedialog = new OpenFileDialog
+            {
+                Multiselect = false,
+                DefaultExt = ".mp3"
 
+            };
+            bool? dialogOk = filedialog.ShowDialog();
+            if(dialogOk==true)
+            {
+
+                fajlnev = filedialog.FileName;
+                Box.Text = filedialog.SafeFileName;
+                mediaPlayer.Open(new Uri(fajlnev));
+            }
+        }
+
+        private void lejatszas_Click(object sender, RoutedEventArgs e)
+        {
+            mediaPlayer.Play();
+        }
+
+        private void szunet_Click(object sender, RoutedEventArgs e)
+        {
+            mediaPlayer.Pause();
+        }
+
+        private void stop_Click(object sender, RoutedEventArgs e)
+        {
+            mediaPlayer.Stop();
         }
     }
 }

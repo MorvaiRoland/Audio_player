@@ -115,5 +115,11 @@
   <ItemGroup>
     <Resource Include="Image3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="—Pngtree—vector high volume icon_3773573.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
