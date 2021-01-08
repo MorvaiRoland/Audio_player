@@ -24,5 +24,10 @@ namespace Audioplayer
         {
             InitializeComponent();
         }
+
+        private void betoltes_Click()
+        {
+
+        }
     }
 }
