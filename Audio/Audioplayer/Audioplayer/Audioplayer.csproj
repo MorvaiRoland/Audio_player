@@ -94,5 +94,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="speaker-2488096_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wp3527060.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="audio-network279x279.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Simple-tricks-for-improving-you-audio-for-eLearning1200x628.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

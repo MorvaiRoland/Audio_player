@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Audioplayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Zene lejátszó" Height="500" Width="300
+        " Icon="speaker-2488096_960_720.png">
+    <Window.Background>
+        <ImageBrush ImageSource="wp3527060.jpg"/>
+    </Window.Background>
+    <Image Margin="44,56,36,277" Source="Image2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+        <Image.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="-0.451"/>
+                <RotateTransform/>
+                <TranslateTransform X="-2.992"/>
+            </TransformGroup>
+        </Image.RenderTransform>
+    </Image>
+
 </Window>
