@@ -75,5 +75,7 @@ namespace Audioplayer
         {
             mediaPlayer.Volume = (double)volumeSlider.Value;
         }
+
+
     }
 }

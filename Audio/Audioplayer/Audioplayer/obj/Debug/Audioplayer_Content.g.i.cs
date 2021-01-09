@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("simple-tricks-for-improving-you-audio-for-elearning1200x628.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8-load-cargo-128.png")]
 
 
