@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 
+
 namespace Audioplayer
 {
     /// <summary>
@@ -48,6 +49,7 @@ namespace Audioplayer
         private void lejatszas_Click(object sender, RoutedEventArgs e)
         {
             mediaPlayer.Play();
+            
         }
 
         private void szunet_Click(object sender, RoutedEventArgs e)
@@ -58,6 +60,20 @@ namespace Audioplayer
         private void stop_Click(object sender, RoutedEventArgs e)
         {
             mediaPlayer.Stop();
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Box_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        }
+
+        private void ChangeMediaVolume(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            mediaPlayer.Volume = (double)volumeSlider.Value;
         }
     }
 }
