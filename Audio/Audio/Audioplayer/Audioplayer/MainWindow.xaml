@@ -67,7 +67,16 @@
         <Label Content="Megállítás" Height="34" Margin="311,413,6,12" Foreground="White" FontSize="14"/>
         <Label Content="Betöltés" Height="34" Margin="322,54,0,371" Foreground="White" FontSize="14"/>
         <Label Content="Hangerő" Height="34" Margin="4,234,320,191" Foreground="White" FontSize="14"/>
-        <Slider Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted"  Margin="2,302,-2,140" />
+        <Slider Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted"  ValueChanged="sliProgress_ValueChanged" Margin="0,301,0,141" Foreground="{x:Null}" Background="{x:Null}" BorderBrush="{x:Null}" />
+        <TextBlock Name="lblProgressStatus" Margin="9,281,-9,162" Foreground="White" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.305"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-5.227"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>00:00:00</TextBlock>
     </Grid>
 
 

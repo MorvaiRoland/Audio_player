@@ -98,7 +98,12 @@ namespace Audioplayer
             userIsDraggingSlider = false;
             mediaPlayer.Position = TimeSpan.FromSeconds(sliProgress.Value);
         }
+        private void sliProgress_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblProgressStatus.Text = TimeSpan.FromSeconds(sliProgress.Value).ToString(@"hh\:mm\:ss");
+        }
 
-       
+
+
     }
 }
